@@ -1,6 +1,6 @@
-jupyter-book==0.10.2
+jupyter-book==0.11.2
 quantecon-book-theme==0.2.3
-ghp-import==1.0.0
+ghp-import==1.1.0
 # Need to pin this to avoid breaking change in 2.0.0
 # https://github.com/executablebooks/jupyter-book/issues/1137
 sphinx-inline-tabs
@@ -17,3 +17,9 @@ matplotlib
 scikit-learn
 ipywidgets
 plotly
+sphinx-tojupyter==0.1.2
+sphinxext-rediraffe==0.2.7
+sphinx-exercise==0.1.1
+jupytext==1.11.2
+jupinx==0.2.3
+tornado>=6.1
