@@ -25,8 +25,9 @@ parse:
     - substitution
 
 sphinx:
+  extra_extensions: [sphinx_multitoc_numbering, sphinxext.rediraffe, sphinx_tojupyter]
   config:
-nb_render_priority:
+    nb_render_priority:
       html:
       - "application/vnd.jupyter.widget-view+json"
       - "application/javascript"
@@ -48,16 +49,12 @@ nb_render_priority:
       - "text/markdown"
       - "text/plain"
     
-
     html_js_files:
-    - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
+      - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
     html_theme: quantecon_book_theme
-  extra_extensions: 
-    - sphinx_multitoc_numbering
-    - sphinx_inline_tabs
-    - sphinx-prompt
 
-quantecon_book_theme
+
+quantecon_book_theme:
     html_static_path: ['_static']
     html_theme_options:
       header_organisation_url: https://multiverse.io
