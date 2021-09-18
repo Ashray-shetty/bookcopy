@@ -51,6 +51,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -64,6 +65,7 @@
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script src="_static/tabs.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script kind="utterances">
 
@@ -113,7 +115,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="shortcut icon" href="_static/DC-2.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="1. 1. Introduction to Python" href="Chapters/01/Workflow_intro.html" />
+    <link rel="next" title="Python Editor" href="Python%20editor.html" />
 
 <!-- Normal Meta Tags -->
 <meta name="author" context="Ashray Shetty" />
@@ -216,13 +218,15 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 <div class="toctree-wrapper compound">
 </div>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
         binderOptions: {
-            repo: "Ashray-shetty/bookcopy",
+            repo: "MultiverseDF/book",
             ref: "main",
         },
         codeMirrorConfig: {
@@ -272,6 +276,13 @@ commentsRunWhenDOMLoaded(addUtterances);
   </a>
  </li>
 </ul>
+<ul class="nav bd-sidenav nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Python%20editor.html">
+   Python Editor
+  </a>
+ </li>
+</ul>
 <p class="caption">
  <span class="caption-text">
   Programming using Python
@@ -280,7 +291,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <ul class="nav bd-sidenav nav sidenav_l1">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="Chapters/01/Workflow_intro.html">
-   1. 1. Introduction to Python
+   1. Introduction to Python
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -290,24 +301,24 @@ commentsRunWhenDOMLoaded(addUtterances);
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="Chapters/01/workflow_1.html">
-     1.1. Basic Python Data Types
+     Basic Python Data Types
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="Chapters/01/workflow_2.html">
-     1.2. Branching Programs
+     Branching Programs
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="Chapters/01/workflow_3.html">
-     1.3. Visualizing Branching Programs
+     Visualizing Branching Programs
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="Chapters/02/Sequence%2C%20Loops%20and%20Methods.html">
-   2. 2. Sequence, Loops and Methods
+   2. Sequence, Loops and Methods
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -317,39 +328,39 @@ commentsRunWhenDOMLoaded(addUtterances);
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="Chapters/02/String%20Methods.html">
-     2.2. String Methods
+     String Methods
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="Chapters/02/List%20and%20Tuples.html">
-     2.3. List and Tuples
+     List and Tuples
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="Chapters/02/Loops.html">
-     2.4. Loops
+     Loops
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Chapters/03/Dictionaries%20and%20Comprehensions.html">
-   3. 3. Dictionaries and Comprehensions
+   3. Dictionaries and Comprehensions
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Chapters/02/Exercise%2001.html">
-   4. 📝 Exercise 01
+   📝 Exercise 01
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Chapters/02/Solutions%2001.html">
-   5. 📃 Solution for Exercise 01
+   📃 Solution for Exercise 01
   </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="Chapters/03/Functions%20and%20Exceptions.html">
-   6. 4. Functions and Exceptions
+   4. Functions and Exceptions
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -359,7 +370,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="Chapters/03/Exceptions.html">
-     6.4. Exceptions
+     Exceptions
     </a>
    </li>
   </ul>
@@ -373,12 +384,12 @@ commentsRunWhenDOMLoaded(addUtterances);
 <ul class="nav bd-sidenav nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="Chapters/04/NumPy.html">
-   7. 5. Introduction to Numpy
+   5. Introduction to Numpy
   </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="Chapters/04/Pandas%20Intro.html">
-   8. 6. DataFrames in Python
+   6. DataFrames in Python
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
@@ -388,29 +399,29 @@ commentsRunWhenDOMLoaded(addUtterances);
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="Chapters/04/Introduction%20to%20Pandas.html">
-     8.2. Introduction to Pandas
+     Introduction to Pandas
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="Chapters/04/Pandas%20grouping%20and%20pivoting.html">
-     8.3. Grouping and Pivoting
+     Grouping and Pivoting
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="Chapters/04/Pandas%20apply%20strings%20and%20plotting.html">
-     8.4. Applying Functions and Plotting in Pandas
+     Applying Functions and Plotting in Pandas
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="Chapters/04/Merge%20and%20Concat%20Dataset.html">
-     8.5. Working with Multiple DataFrames
+     Working with Multiple DataFrames
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="Chapters/05/sql%20intro.html">
-   9. 7. Relational Databases and SQL
+   7. Relational Databases and SQL
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -420,24 +431,24 @@ commentsRunWhenDOMLoaded(addUtterances);
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="Chapters/05/sql%20rdbms.html">
-     9.1. The Relational Model
+     The Relational Model
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="Chapters/05/sql%20basics.html">
-     9.2. SQL
+     SQL
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="Chapters/05/sql%20joins.html">
-     9.3. SQL Joins
+     SQL Joins
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="Chapters/06/viz%20intro.html">
-   10. 8. Data Visualization
+   8. Data Visualization
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
   <label for="toctree-checkbox-6">
@@ -447,17 +458,17 @@ commentsRunWhenDOMLoaded(addUtterances);
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="Chapters/06/viz%20quantitative.html">
-     10.1. Visualizing Quantitative Data
+     Visualizing Quantitative Data
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="Chapters/06/viz%20qualitative.html">
-     10.2. Visualizing Qualitative Data
+     Visualizing Qualitative Data
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="Chapters/06/viz%20matplotlib.html">
-     10.3. Customizing Plots using matplotlib
+     Customizing Plots using matplotlib
     </a>
    </li>
   </ul>
@@ -497,7 +508,7 @@ commentsRunWhenDOMLoaded(addUtterances);
                     <li data-tippy-content="Change contrast" class="btn__contrast"><i data-feather="sunset"></i></li>
                     <li data-tippy-content="Download Notebook"><a href="/_notebooks/intro.ipynb" download><i data-feather="download-cloud"></i></a></li>
                         <li data-tippy-content="Download PDF" onClick="window.print()"><i data-feather="file"></i></li>
-                    <li data-tippy-content="View Source"><a target="_blank" href="https://github.com/Ashray-shetty/bookcopy/tree/main/intro.ipynb" download><i data-feather="github"></i></a></li>
+                    <li data-tippy-content="View Source"><a target="_blank" href="https://github.com/MultiverseDF/book/tree/maincopy/intro.ipynb" download><i data-feather="github"></i></a></li>
                 </ul>
 
             </div>
