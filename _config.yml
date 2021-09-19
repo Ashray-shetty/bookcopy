@@ -1,4 +1,5 @@
 title: Data Science with Python
+author: Ashray Shetty
 copyright: "2021"
 logo: mvlogo.png
 
@@ -35,6 +36,18 @@ launch_buttons:
   notebook_interface: "classic"  # or "jupyterlab"
   thebe                  : true
 
+quantecon_book_theme:
+  html_theme_options:
+    header_organisation_url: https://www.multiverse.io/en-GB
+    header_organisation: Multiverse
+    repository_url: https://github.com/Ashray-shetty/bookcopy
+    nb_repository_url: https://github.com/Ashray-shetty/bookcopy
+    og_logo_url: https://raw.githubusercontent.com/Ashray-shetty/bookcopy/main/Multiverse_Logo_RGB_Indigo-02.png
+    launch_buttons: 
+      binderhub_url: https://mybinder.org
+      thebe: true
+
+
 html:
   favicon: mvlogo.png
   navbar_footer_text: Visit our <a href="https://github.com/MultiverseDF/book">repository</a>
@@ -47,7 +60,7 @@ html:
     hypothesis: true
 
 repository:
-  url: https://github.com/MultiverseDF/book                    
+  url: https://github.com/Ashray-shetty/bookcopy                   
   path_to_book: .                  
   branch: main
 
