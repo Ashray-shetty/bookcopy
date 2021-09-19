@@ -58,10 +58,7 @@ html:
 
   use_repository_button: false       
   use_issues_button: false
-  comments:
-    utterances:
-      repo: "github-org/github-repo"          
-    hypothesis: true
+
 
 repository:
   url: https://github.com/Ashray-shetty/bookcopy                   
