@@ -41,6 +41,8 @@ html_theme_options:
   header_organisation_url: https://www.multiverse.io/en-GB
   header_organisation: Multiverse
   repository_url: https://github.com/Ashray-shetty/bookcopy
+  repository_branch: main
+  path_to_docs: .
   nb_repository_url: https://github.com/Ashray-shetty/bookcopy
   og_logo_url: https://raw.githubusercontent.com/Ashray-shetty/bookcopy/main/Multiverse_Logo_RGB_Indigo-02.png
   launch_buttons: 
