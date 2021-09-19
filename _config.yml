@@ -31,6 +31,7 @@ sphinx:
     - sphinx_multitoc_numbering
     - sphinx_inline_tabs
     - sphinx-prompt
+    - sphinx_thebe
 
 launch_buttons:
   notebook_interface: "classic"  # or "jupyterlab"
@@ -48,7 +49,7 @@ html_theme_options:
   launch_buttons: 
     binderhub_url: https://mybinder.org
     notebook_interface: "jupyterlab"
-    thebe: true
+    thebe: True
 
 
 html:
