@@ -59,7 +59,7 @@ sphinx:
     repository_branch: main
     nb_repository_url: https://github.com/Ashray-shetty/bookcopy/Chapters
     og_logo_url: https://raw.githubusercontent.com/Ashray-shetty/bookcopy/main/Multiverse_Logo_RGB_Indigo-02.png
-    launch_buttons = {
+    launch_buttons : {
       binderhub_url: "https://mybinder.org"
       notebook_interface: "jupyterlab"
       thebe: True
