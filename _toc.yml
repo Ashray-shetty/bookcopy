@@ -3,14 +3,11 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 # - url: ashrayshetty.netlify.app
 #   title: Data Circle
-- file: intro
-  title: Introduction
+format: jb-book
+root: intro
 
-- part:
-  chapters:
-    - file: Python editor
-
-- part: Programming using Python
+parts: 
+- caption: Programming using Python
   numbered: false
   chapters:
     - file: Chapters/01/Workflow_intro
@@ -29,7 +26,7 @@
     - file: Chapters/03/Functions and Exceptions
       sections:
         - file: Chapters/03/Exceptions
-- part: Data Wrangling using Python
+- caption: Data Wrangling using Python
   numbered: false
   chapters:
     - file: Chapters/04/NumPy
