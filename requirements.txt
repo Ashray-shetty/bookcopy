@@ -1,4 +1,4 @@
-jupyter-book==0.10.2
+jupyter-book==0.11.2
 git+https://github.com/Ashray-shetty/book-theme.git
 ghp-import==1.0.0
 # Need to pin this to avoid breaking change in 2.0.0
