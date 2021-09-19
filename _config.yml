@@ -47,7 +47,7 @@ html_theme_options:
   og_logo_url: https://raw.githubusercontent.com/Ashray-shetty/bookcopy/main/Multiverse_Logo_RGB_Indigo-02.png
   launch_buttons: {
     binderhub_url: https://mybinder.org
-    notebook_interface: classic
+    notebook_interface: jupyterlab
     thebe: true
     }
 
