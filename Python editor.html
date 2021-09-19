@@ -80,7 +80,7 @@
 <meta property="og:title" content="Python Editor" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="None" />
-<meta property="og:image" content="" />
+<meta property="og:image" content="https://raw.githubusercontent.com/Ashray-shetty/bookcopy/main/Multiverse_Logo_RGB_Indigo-02.png" />
 <meta property="og:description" content="Python Editor  &lt;hr style=&#34;height:1px;border:none;color:#666;background-color:#666;&#34; /&gt;   Important  You can use this code editor to practice, or experiment with" />
 <meta property="og:site_name" content="Data Science with Python" />
 <meta name="theme-color" content="#ffffff" />
@@ -109,7 +109,7 @@
                             <p class="logo">
                                 
                                     
-                                    <a href="intro.html"><img src="_static/mvlogo.png" class="logo" alt="logo"></a>
+                                    <a href=https://www.multiverse.io/en-GB><img src="_static/mvlogo.png" class="logo" alt="logo"></a>
                                     
                                 
                             </p>
@@ -208,14 +208,7 @@
                 </div>
 
                 <nav class="sidebar__nav" id="sidebar-nav" aria-label="Main navigation">
-                    <ul class="nav bd-sidenav nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="intro.html">
-   Data Science
-  </a>
- </li>
-</ul>
-<p class="caption">
+                    <p class="caption">
  <span class="caption-text">
   Programming using Python
  </span>
@@ -424,10 +417,10 @@
                 <ul class="toolbar__main">
                     <li data-tippy-content="Table of Contents" class="btn__sidebar"><i data-feather="menu"></i></li>
                     <li data-tippy-content="Home"><a href="intro.html"><i data-feather="home"></i></a></li>
-                    <li class="btn__qelogo"><a href="" title=""><span class="show-for-sr"></span></a></li>
+                    <li class="btn__qelogo"><a href="https://www.multiverse.io/en-GB" title=""><span class="show-for-sr">Multiverse</span></a></li>
                     <!-- <li class="btn__search">
                         <form action="search.html" method="get">
-                            <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off">
+                            <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off">
                             <i data-feather="search"></i>
                         </form>
                     </li> -->
@@ -438,6 +431,7 @@
                     <li data-tippy-content="Increase font size" class="btn__plus"><i data-feather="plus-circle"></i></li>
                     <li data-tippy-content="Decrease font size" class="btn__minus"><i data-feather="minus-circle"></i></li>
                     <li data-tippy-content="Change contrast" class="btn__contrast"><i data-feather="sunset"></i></li>
+                    <li class="settings-button" id="settingsButton"><div data-tippy-content="Launch Notebook"><i data-feather="play-circle"></i></div></li>
                         <li data-tippy-content="Download PDF" onClick="window.print()"><i data-feather="file"></i></li>
                     <li data-tippy-content="View Source"><a target="_blank" href="https://github.com/Ashray-shetty/bookcopy/tree/main/Python editor.md" download><i data-feather="github"></i></a></li>
                 </ul>
@@ -468,16 +462,20 @@
                 <span class="label">Public</span>
                 <select id="launcher-public-input">
                 
+                    <option value="https://mybinder.org/v2/gh/Ashray-shetty/bookcopy/main?urlpath=tree/Chapters/Python editor.ipynb">BinderHub</option>
+                
+                    <option value="https://colab.research.google.com/github/Ashray-shetty/bookcopy/blob/main/Chapters/Python editor.ipynb">Colab</option>
+                
                 </select>
                 <i class="fas fa-check-circle"></i>
             </li>
             <li class="launcher-private">
                 <span class="label">Private</span>
-                <input type="text" id="launcher-private-input" data-repourl="" data-urlpath="" data-branch=>
+                <input type="text" id="launcher-private-input" data-repourl="https://github.com/Ashray-shetty/bookcopy/Chapters" data-urlpath="tree/bookcopy/Chapters/Python editor.ipynb" data-branch=main>
                 <i class="fas fa-check-circle"></i>
             </li>
             </ul>
-            <p class="launch"><a href="" id="advancedLaunchButton" target="_blank">Launch Notebook</a></p>
+            <p class="launch"><a href="https://mybinder.org/v2/gh/Ashray-shetty/bookcopy/main?urlpath=tree/Chapters/Python editor.ipynb" id="advancedLaunchButton" target="_blank">Launch Notebook</a></p>
             <script>
                 // QuantEcon Notebook Launcher
                 const launcherTypeElements = document.querySelectorAll('#settingsModal .modal-servers li');
@@ -508,9 +506,9 @@
                 const launcherPublic = document.getElementById('launcher-public-input');
                 const launcherPrivate = document.getElementById('launcher-private-input');
                 const pageName = "Python editor";
-                const repoURL = "";
-                const urlPath = "";
-                const branch = ""
+                const repoURL = "https://github.com/Ashray-shetty/bookcopy/Chapters";
+                const urlPath = "tree/bookcopy/Chapters/Python editor.ipynb";
+                const branch = "main"
                 const launchNotebookLink = document.getElementById('advancedLaunchButton');
 
                 // Highlight public server option if previous selection exists
