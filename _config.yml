@@ -1,7 +1,6 @@
 title: Data Science with Python
-author: Ashray Shetty
 copyright: "2021"
-logo: DC-2.png
+logo: mvlogo.png
 
 execute:
   execute_notebooks: 'off'
@@ -37,7 +36,7 @@ launch_buttons:
   thebe                  : true
 
 html:
-  favicon: DC-2.png
+  favicon: mvlogo.png
   navbar_footer_text: Visit our <a href="https://github.com/MultiverseDF/book">repository</a>
 
   use_repository_button: false       
