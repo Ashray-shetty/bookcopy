@@ -62,7 +62,7 @@ sphinx:
       launch_buttons:
         colab_url: https://colab.research.google.com
         binderhub_url: https://mybinder.org
-        thebe: true
+        thebe: True
 
     tojupyter_static_file_path: ["source/_static", "_static"]
     tojupyter_target_html: true
