@@ -433,20 +433,20 @@
                 <span class="label">Public</span>
                 <select id="launcher-public-input">
                 
-                    <option value="https://mybinder.org/v2/gh/Ashray-shetty/bookcopy/main?urlpath=tree/Chapters/genindex.ipynb">BinderHub</option>
+                    <option value="https://mybinder.org/v2/gh/Ashray-shetty/bookcopy/main?urlpath=tree/genindex.ipynb">BinderHub</option>
                 
-                    <option value="https://colab.research.google.com/github/Ashray-shetty/bookcopy/blob/main/Chapters/genindex.ipynb">Colab</option>
+                    <option value="https://colab.research.google.com/github/Ashray-shetty/bookcopy/blob/main/genindex.ipynb">Colab</option>
                 
                 </select>
                 <i class="fas fa-check-circle"></i>
             </li>
             <li class="launcher-private">
                 <span class="label">Private</span>
-                <input type="text" id="launcher-private-input" data-repourl="https://github.com/Ashray-shetty/bookcopy/Chapters" data-urlpath="tree/bookcopy/Chapters/genindex.ipynb" data-branch=main>
+                <input type="text" id="launcher-private-input" data-repourl="https://github.com/Ashray-shetty/bookcopy" data-urlpath="tree/bookcopy/genindex.ipynb" data-branch=main>
                 <i class="fas fa-check-circle"></i>
             </li>
             </ul>
-            <p class="launch"><a href="https://mybinder.org/v2/gh/Ashray-shetty/bookcopy/main?urlpath=tree/Chapters/genindex.ipynb" id="advancedLaunchButton" target="_blank">Launch Notebook</a></p>
+            <p class="launch"><a href="https://mybinder.org/v2/gh/Ashray-shetty/bookcopy/main?urlpath=tree/genindex.ipynb" id="advancedLaunchButton" target="_blank">Launch Notebook</a></p>
             <script>
                 // QuantEcon Notebook Launcher
                 const launcherTypeElements = document.querySelectorAll('#settingsModal .modal-servers li');
@@ -477,8 +477,8 @@
                 const launcherPublic = document.getElementById('launcher-public-input');
                 const launcherPrivate = document.getElementById('launcher-private-input');
                 const pageName = "genindex";
-                const repoURL = "https://github.com/Ashray-shetty/bookcopy/Chapters";
-                const urlPath = "tree/bookcopy/Chapters/genindex.ipynb";
+                const repoURL = "https://github.com/Ashray-shetty/bookcopy";
+                const urlPath = "tree/bookcopy/genindex.ipynb";
                 const branch = "main"
                 const launchNotebookLink = document.getElementById('advancedLaunchButton');
 

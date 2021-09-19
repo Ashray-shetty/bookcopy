@@ -53,9 +53,9 @@
     <script src="../../_static/quantecon-book-theme.76bf49d7bbc59738cdb03766fad654af.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -591,8 +591,8 @@ I know you!
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "Ashray-shetty/bookcopy",
+            ref: "main",
         },
         codeMirrorConfig: {
             theme: "abcdef",
@@ -890,20 +890,20 @@ I know you!
                 <span class="label">Public</span>
                 <select id="launcher-public-input">
                 
-                    <option value="https://mybinder.org/v2/gh/Ashray-shetty/bookcopy/main?urlpath=tree/Chapters/Chapters/02/List and Tuples.ipynb">BinderHub</option>
+                    <option value="https://mybinder.org/v2/gh/Ashray-shetty/bookcopy/main?urlpath=tree/Chapters/02/List and Tuples.ipynb">BinderHub</option>
                 
-                    <option value="https://colab.research.google.com/github/Ashray-shetty/bookcopy/blob/main/Chapters/Chapters/02/List and Tuples.ipynb">Colab</option>
+                    <option value="https://colab.research.google.com/github/Ashray-shetty/bookcopy/blob/main/Chapters/02/List and Tuples.ipynb">Colab</option>
                 
                 </select>
                 <i class="fas fa-check-circle"></i>
             </li>
             <li class="launcher-private">
                 <span class="label">Private</span>
-                <input type="text" id="launcher-private-input" data-repourl="https://github.com/Ashray-shetty/bookcopy/Chapters" data-urlpath="tree/bookcopy/Chapters/Chapters/02/List and Tuples.ipynb" data-branch=main>
+                <input type="text" id="launcher-private-input" data-repourl="https://github.com/Ashray-shetty/bookcopy" data-urlpath="tree/bookcopy/Chapters/02/List and Tuples.ipynb" data-branch=main>
                 <i class="fas fa-check-circle"></i>
             </li>
             </ul>
-            <p class="launch"><a href="https://mybinder.org/v2/gh/Ashray-shetty/bookcopy/main?urlpath=tree/Chapters/Chapters/02/List and Tuples.ipynb" id="advancedLaunchButton" target="_blank">Launch Notebook</a></p>
+            <p class="launch"><a href="https://mybinder.org/v2/gh/Ashray-shetty/bookcopy/main?urlpath=tree/Chapters/02/List and Tuples.ipynb" id="advancedLaunchButton" target="_blank">Launch Notebook</a></p>
             <script>
                 // QuantEcon Notebook Launcher
                 const launcherTypeElements = document.querySelectorAll('#settingsModal .modal-servers li');
@@ -934,8 +934,8 @@ I know you!
                 const launcherPublic = document.getElementById('launcher-public-input');
                 const launcherPrivate = document.getElementById('launcher-private-input');
                 const pageName = "Chapters/02/List and Tuples";
-                const repoURL = "https://github.com/Ashray-shetty/bookcopy/Chapters";
-                const urlPath = "tree/bookcopy/Chapters/Chapters/02/List and Tuples.ipynb";
+                const repoURL = "https://github.com/Ashray-shetty/bookcopy";
+                const urlPath = "tree/bookcopy/Chapters/02/List and Tuples.ipynb";
                 const branch = "main"
                 const launchNotebookLink = document.getElementById('advancedLaunchButton');
 

@@ -55,9 +55,9 @@
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -425,16 +425,16 @@ Filled array
  [1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
  [1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]] 
 
-[[0.10825095 0.55667817 0.87243456 0.3893505  0.98801435 0.2156828
-  0.31770801 0.81982992 0.5703256  0.34391078]
- [0.96414404 0.51482314 0.88262768 0.48808476 0.50309176 0.38691355
-  0.95675541 0.33748341 0.30635031 0.54484541]
- [0.52342981 0.71710401 0.40888085 0.11748697 0.65706717 0.03537293
-  0.87770791 0.6100466  0.80608666 0.58627955]
- [0.0818903  0.61507334 0.37854588 0.25793289 0.24088761 0.33759347
-  0.57931446 0.95782038 0.00991697 0.50333379]
- [0.48995532 0.57891471 0.37297127 0.95185048 0.66602017 0.40458751
-  0.10226214 0.42866589 0.50418231 0.42507025]]
+[[0.36562823 0.25538352 0.54070189 0.06457378 0.34994471 0.65949881
+  0.10122874 0.75004482 0.36454664 0.70286392]
+ [0.3907155  0.83074003 0.78089559 0.42630048 0.32391922 0.52418655
+  0.48968295 0.92143311 0.73940567 0.39122888]
+ [0.59215529 0.92711915 0.60282539 0.00842466 0.88992387 0.68207761
+  0.52591143 0.53786133 0.20243224 0.90302229]
+ [0.70736659 0.46301435 0.96253498 0.03753025 0.84270223 0.6885725
+  0.49854553 0.76214291 0.14760393 0.10518612]
+ [0.83816119 0.37356831 0.62174307 0.21596361 0.81088285 0.03696372
+  0.527475   0.38700584 0.61739116 0.34548591]]
 </pre></div>
 </div>
 </div>
@@ -686,19 +686,19 @@ This argument may be named or unnamed - doesn’t matter. An example:</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Original array:
-[[0.96511803 0.48785743 0.18606426]
- [0.08044688 0.44415136 0.21518371]
- [0.31810211 0.03947119 0.81810782]] 
+[[0.64234123 0.27580101 0.34952503]
+ [0.68140434 0.75113512 0.46651466]
+ [0.35985386 0.96279359 0.97553813]] 
 
 Use the round() method with the argument 3:
-[[0.965 0.488 0.186]
- [0.08  0.444 0.215]
- [0.318 0.039 0.818]] 
+[[0.642 0.276 0.35 ]
+ [0.681 0.751 0.467]
+ [0.36  0.963 0.976]] 
 
 Use the round() method with the named argument 5:
-[[0.96512 0.48786 0.18606]
- [0.08045 0.44415 0.21518]
- [0.3181  0.03947 0.81811]] 
+[[0.64234 0.2758  0.34953]
+ [0.6814  0.75114 0.46651]
+ [0.35985 0.96279 0.97554]] 
 </pre></div>
 </div>
 </div>
@@ -747,8 +747,8 @@ Shape after ravel(): (10,)
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "Ashray-shetty/bookcopy",
+            ref: "main",
         },
         codeMirrorConfig: {
             theme: "abcdef",
@@ -1046,20 +1046,20 @@ Shape after ravel(): (10,)
                 <span class="label">Public</span>
                 <select id="launcher-public-input">
                 
-                    <option value="https://mybinder.org/v2/gh/Ashray-shetty/bookcopy/main?urlpath=tree/Chapters/Chapters/04/NumPy.ipynb">BinderHub</option>
+                    <option value="https://mybinder.org/v2/gh/Ashray-shetty/bookcopy/main?urlpath=tree/Chapters/04/NumPy.ipynb">BinderHub</option>
                 
-                    <option value="https://colab.research.google.com/github/Ashray-shetty/bookcopy/blob/main/Chapters/Chapters/04/NumPy.ipynb">Colab</option>
+                    <option value="https://colab.research.google.com/github/Ashray-shetty/bookcopy/blob/main/Chapters/04/NumPy.ipynb">Colab</option>
                 
                 </select>
                 <i class="fas fa-check-circle"></i>
             </li>
             <li class="launcher-private">
                 <span class="label">Private</span>
-                <input type="text" id="launcher-private-input" data-repourl="https://github.com/Ashray-shetty/bookcopy/Chapters" data-urlpath="tree/bookcopy/Chapters/Chapters/04/NumPy.ipynb" data-branch=main>
+                <input type="text" id="launcher-private-input" data-repourl="https://github.com/Ashray-shetty/bookcopy" data-urlpath="tree/bookcopy/Chapters/04/NumPy.ipynb" data-branch=main>
                 <i class="fas fa-check-circle"></i>
             </li>
             </ul>
-            <p class="launch"><a href="https://mybinder.org/v2/gh/Ashray-shetty/bookcopy/main?urlpath=tree/Chapters/Chapters/04/NumPy.ipynb" id="advancedLaunchButton" target="_blank">Launch Notebook</a></p>
+            <p class="launch"><a href="https://mybinder.org/v2/gh/Ashray-shetty/bookcopy/main?urlpath=tree/Chapters/04/NumPy.ipynb" id="advancedLaunchButton" target="_blank">Launch Notebook</a></p>
             <script>
                 // QuantEcon Notebook Launcher
                 const launcherTypeElements = document.querySelectorAll('#settingsModal .modal-servers li');
@@ -1090,8 +1090,8 @@ Shape after ravel(): (10,)
                 const launcherPublic = document.getElementById('launcher-public-input');
                 const launcherPrivate = document.getElementById('launcher-private-input');
                 const pageName = "Chapters/04/NumPy";
-                const repoURL = "https://github.com/Ashray-shetty/bookcopy/Chapters";
-                const urlPath = "tree/bookcopy/Chapters/Chapters/04/NumPy.ipynb";
+                const repoURL = "https://github.com/Ashray-shetty/bookcopy";
+                const urlPath = "tree/bookcopy/Chapters/04/NumPy.ipynb";
                 const branch = "main"
                 const launchNotebookLink = document.getElementById('advancedLaunchButton');
 
