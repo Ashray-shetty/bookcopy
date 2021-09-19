@@ -38,7 +38,7 @@ sphinx:
     repository_url: https://github.com/Ashray-shetty/bookcopy
     repository_branch: main
     path_to_docs: /Chapters
-    nb_repository_url: https://github.com/Ashray-shetty/bookcopy
+    nb_repository_url: https://github.com/Ashray-shetty/bookcopy/Chapters
     og_logo_url: https://raw.githubusercontent.com/Ashray-shetty/bookcopy/main/Multiverse_Logo_RGB_Indigo-02.png
     launch_buttons: 
       binderhub_url: "https://mybinder.org"
