@@ -57,11 +57,12 @@ sphinx:
       header_organisation: Multiverse
       repository_url: https://github.com/Ashray-shetty/bookcopy
       repository_branch: main
-      nb_repository_url: https://github.com/Ashray-shetty/bookcopy/Chapters
+      nb_repository_url: https://github.com/Ashray-shetty/bookcopy
       og_logo_url: https://raw.githubusercontent.com/Ashray-shetty/bookcopy/main/Multiverse_Logo_RGB_Indigo-02.png
       launch_buttons:
         colab_url: https://colab.research.google.com
         binderhub_url: https://mybinder.org
+        thebe: true
 
     tojupyter_static_file_path: ["source/_static", "_static"]
     tojupyter_target_html: true
