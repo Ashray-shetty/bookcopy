@@ -59,17 +59,15 @@ sphinx:
     repository_branch: main
     nb_repository_url: https://github.com/Ashray-shetty/bookcopy/Chapters
     og_logo_url: https://raw.githubusercontent.com/Ashray-shetty/bookcopy/main/Multiverse_Logo_RGB_Indigo-02.png
-    launch_buttons : {
-      binderhub_url: "https://mybinder.org"
-      notebook_interface: "jupyterlab"
-      thebe: True
-    }
+    launch_buttons:
+        colab_url: https://colab.research.google.com
+        binderhub_url: https://mybinder.org
   rediraffe_redirects:
     index_toc.md: intro.md
   tojupyter_static_file_path: ["source/_static", "_static"]
   tojupyter_target_html: true
-  tojupyter_urlpath: "https://python-advanced.quantecon.org/"
-  tojupyter_image_urlpath: "https://python-advanced.quantecon.org/_static/"
+  tojupyter_urlpath: "https://ashray-shetty.github.io/bookcopy/"
+  tojupyter_image_urlpath: "https://ashray-shetty.github.io/bookcopy/_static/"
   tojupyter_lang_synonyms: ["ipython", "ipython3", "python"]
   tojupyter_kernels:
     python3:
