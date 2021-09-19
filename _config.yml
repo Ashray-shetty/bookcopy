@@ -45,11 +45,10 @@ html_theme_options:
   path_to_docs: /Chapters
   nb_repository_url: https://github.com/Ashray-shetty/bookcopy
   og_logo_url: https://raw.githubusercontent.com/Ashray-shetty/bookcopy/main/Multiverse_Logo_RGB_Indigo-02.png
-  launch_buttons: {
+  launch_buttons: 
     binderhub_url: https://mybinder.org
-    notebook_interface: jupyterlab
+    notebook_interface: "jupyterlab"
     thebe: true
-    }
 
 
 html:
